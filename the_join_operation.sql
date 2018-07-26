@@ -1,4 +1,4 @@
--- 6 The JOIN Operation:
+-- 6 JOIN:
 -- https://sqlzoo.net/wiki/The_JOIN_operation
 
 

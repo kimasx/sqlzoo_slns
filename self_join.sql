@@ -54,4 +54,12 @@ ON (r1.company=r2.company AND r1.num=r2.num)
 WHERE (r1.stop=115 AND r2.stop=137) OR (r1.stop=137 AND r2.stop=115)
 GROUP BY r1.num,r1.company;
 
-
+/* 8.
+Give a list of the services which connect the stops 'Craiglockhart' and 'Tollcross'
+*/
+SELECT r1.company, r1.num
+FROM route r1 JOIN route r2
+ON (r1.company=r2.company AND r1.num=r2.num)
+JOIN stops AS stopa ON r1.stop=stopa.id
+JOIN stops AS stopb ON r2.stop=stopb.id
+WHERE stopa.name='Tollcross' AND stopb.name='Craiglockhart';

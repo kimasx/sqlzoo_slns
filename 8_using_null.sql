@@ -1,4 +1,4 @@
--- 8 SELECT basics
+-- 8 Using NULL
 -- https://sqlzoo.net/wiki/Using_Null
 
 
